@@ -1,0 +1,14 @@
+.name{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: brown;
+  
+}
+.menu{
+  display: flex;
+  list-style: none;
+}
+.menu li{
+  margin-left: 25px;
+}

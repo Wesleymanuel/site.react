@@ -1,0 +1,21 @@
+.conteiner{
+    background-color: aqua;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column nowrap;
+    border-radius: 30px;
+
+}
+input{
+    height: 40px;
+    border-radius: 10px;
+    width: 300px;
+}
+img{
+    height: 100px;
+}
+.inputs{
+    padding: 10px;
+}
