@@ -1,36 +1,27 @@
 import { useState } from 'react';
+import List from './List'
 import './App.css'
+import Form from './Form';
+
 function App(){
+  
+  
+  const [items , setItems] = useState([]);
+ 
+  function onAddItem(item) {
+    setItems([...items, item])
+  }
 
-  const [text , setText] = useState("")
-  const [item , setItem] = useState()
-
-    function muadarItem(event) {
-      let t = event.target.value;
-      setText(t)
-    }
-
-    function add() {
-      
-    }
-
+   
 
   return (
+    
     <div>
-        <h1>modificador</h1>
-    <br />
-        <input onChange={muadarItem} type="text" />
-    <br />
-        <button onClick={add}>mudar</button>
-    <br />
-      <ul>
-        <li>{text}</li>
-      </ul> 
-      <h4>esse e o teste</h4>
+    <Form onAddItem={onAddItem}></Form>
+    <List items={items}></List>
+      
     </div>
   )
-
-
 }
 
 
