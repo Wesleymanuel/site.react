@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import List from './List'
+import Item  from './Objeto';
 import './App.css'
 import Form from './Form';
 
@@ -8,8 +9,10 @@ function App(){
   
   const [items , setItems] = useState([]);
  
-  function onAddItem(item) {
-    setItems([...items, item])
+  function onAddItem(text) {
+    let it = new Item(text)
+
+    setItems([...items, it])
   }
 
    
